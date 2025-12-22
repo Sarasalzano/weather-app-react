@@ -1,0 +1,637 @@
+/* ============================================ CSS RESET ============================================ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "DM Sans", sans-serif;
+}
+
+/* ============================================ GENERAL RULES ====================================== */
+body {
+  background-color: #02012b;
+  color: white;
+  font-size: 16px;
+}
+
+h1 {
+  text-align: center;
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* ============================================ UTILITY  ============================================ */
+.components-details {
+  background-color: #25253f;
+  border-radius: 12px;
+}
+
+.b-radius12 {
+  border-radius: 12px;
+}
+
+.img-placeholder {
+  background-color: aqua;
+  display: block;
+}
+
+/* ============================================ HEADER ============================================ */
+.header-wrapper {
+  min-height: 80px;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-shrink: 0;
+  padding: 1rem 0;
+}
+
+.header-col-right {
+  position: relative;
+}
+
+.header-col-right img {
+  vertical-align: middle;
+  margin-right: 0.5rem;
+}
+
+.header-col-right span {
+  line-height: 1;
+  display: inline-block;
+}
+
+.header-col-right button {
+  padding: 0.5rem 1rem;
+  background: #2a2d3a;
+  border: 1px solid #444;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  font-size: 0.875rem;
+}
+
+/* ============================================ MAIN LAYOUT  ============================================ */
+.main-wrapper {
+  width: 90%;
+  max-width: 1400px;
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.outer-bottom-container {
+  flex: 1;
+  display: flex;
+  gap: 2vw;
+  min-height: 0;
+  margin-bottom: 0;
+}
+
+.outer-bottom-container .col-left {
+  height: 100%;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+}
+
+.outer-bottom-container .col-right {
+  width: 30%;
+  height: 95%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* ============================================ SEARCH BAR ============================================ */
+.search-bar-container {
+  text-align: center;
+  margin-bottom: 30px;
+  flex-shrink: 0;
+}
+
+.search-bar-container button {
+  padding: 0.5rem 1rem;
+  background: #2a2d3a;
+  border: 1px solid #444;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  font-size: 0.875rem;
+}
+
+/* ============================================ LOCATION CARD  ============================================ */
+.location-container {
+  width: 100%;
+  height: 22vh;
+  margin-top: 0;
+  flex-shrink: 0;
+  margin-bottom: 0;
+  border-radius: 25px;
+  overflow: hidden;
+}
+
+.city-name-container {
+  width: calc(100% / 10);
+  min-width: 80px;
+}
+
+.city-row {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.location-content-wrapper {
+  height: 100%;
+  width: 100%;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.content-wrapper-col-left {
+  flex: 1;
+  min-width: 0;
+}
+
+.content-wrapper-col-left h2 {
+  font-size: 2rem;
+  font-family: "Bricolage Grotesque", sans-serif;
+}
+
+.content-wrapper-col-right {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.content-wrapper-col-right h2 {
+  font-size: 4rem;
+  white-space: nowrap;
+  font-family: "Bricolage Grotesque", sans-serif;
+}
+
+/* ============================================ WEATHER ICONS & TEMPERATURE ============================================ */
+.weather-icon-big,
+.temps-big {
+  display: inline;
+}
+
+.weather-icon-big {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+}
+
+.icon-weather-lg {
+  width: auto;
+}
+
+/* ============================================ WEATHER DETAILS CARDS  ============================================ */
+.weather-details {
+  display: flex;
+  margin-top: 15px;
+}
+
+.weather-details-wrapper {
+  min-height: 8vh;
+  width: 100%;
+  display: flex;
+  gap: 1.5vw;
+  align-items: stretch;
+  justify-content: space-between;
+  flex-shrink: 0;
+  margin-bottom: 0;
+}
+
+.weather-details-card {
+  height: 100%;
+  flex: 1;
+  background-color: #25253f;
+  padding: 16px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 6px;
+}
+
+.weather-detail-text {
+  display: block;
+  line-height: 1.3;
+}
+
+.detail-text-1-5rem {
+  font-size: 1.3rem;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+/* ============================================ WEEKLY FORECAST  ============================================ */
+.week-days {
+  margin-top: 20px;
+}
+
+.week-days h2 {
+  margin-bottom: 10px;
+  margin-top: 0;
+  font-size: 1.25rem;
+}
+
+.week-days-wrapper {
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  gap: 1.5vw;
+  align-items: stretch;
+  justify-content: space-between;
+}
+
+.day-card {
+  height: 100%;
+  flex: 1 1 0;
+  min-width: 80px;
+  background-color: #25253f;
+  padding: 12px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 8px;
+  font-size: 0.8rem;
+}
+
+.day-card img {
+  max-height: 60px;
+  width: auto;
+  margin: 0 auto;
+  object-fit: contain;
+}
+
+.day-name {
+  align-self: center;
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.temp-min-max {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  font-size: 1rem;
+  flex-shrink: 0;
+}
+
+.temp-min-max span {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* ============================================ HOURLY FORECAST  ============================================ */
+.fc-list-title-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  flex-shrink: 0;
+  gap: 16px;
+}
+
+.fc-list-title-wrapper h3 {
+  font-size: 1.2rem;
+  white-space: nowrap;
+}
+
+.hourly-fc-list {
+  flex: 1;
+  overflow-y: auto;
+  min-height: 0;
+  scrollbar-width: thin;
+  scrollbar-color: #444 #1a1a2e;
+}
+
+.hourly-fc-card {
+  width: 100%;
+  margin: 5px auto;
+  border-radius: 8px;
+  height: fit-content;
+  background-color: #02012b;
+  flex-shrink: 0;
+}
+
+.hour-row {
+  background-color: #25253f;
+  min-height: 40px;
+  height: 5vh;
+  border-radius: 12px;
+  margin-bottom: 10px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.hourly-icon {
+  max-width: 100%;
+  height: auto;
+}
+
+.hourly-icon-wrapper {
+  width: 50px;
+  flex-shrink: 0;
+}
+
+/* ============================================ DROPDOWN MENUS  ============================================ */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-toggle {
+  padding: 0.5rem 1rem;
+  background: #2a2d3a;
+  border: 1px solid #444;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  font-size: 0.8rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  white-space: nowrap;
+}
+
+.dropdown-toggle:hover {
+  background: #34374a;
+}
+
+.dropdown-toggle svg {
+  flex-shrink: 0;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  background: #2a2d3a;
+  border-radius: 12px;
+  padding: 8px;
+  min-width: 180px;
+  max-width: 250px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  z-index: 100;
+}
+
+.dropdown-item {
+  padding: 10px 12px;
+  cursor: pointer;
+  border-radius: 6px;
+  color: white;
+  transition: background 0.2s;
+  font-size: 0.8rem;
+}
+
+.dropdown-item:hover {
+  background: #34374a;
+}
+
+.dropdown-item.active {
+  background: #4a5568;
+}
+
+/* ============================================ WEATHER OPTIONS (UNITS MENU)  ============================================ */
+.weather-options-list {
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  background: #2a2d3a;
+  border-radius: 12px;
+  padding: 8px;
+  min-width: 180px;
+  max-width: 250px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  z-index: 100;
+}
+
+.weather-options-row {
+  padding: 10px 12px;
+  cursor: pointer;
+  border-radius: 6px;
+  color: white;
+  font-size: 0.8rem;
+}
+
+.weather-options-row:hover {
+  background: #34374a;
+}
+
+.weather-options-row.active {
+  background: #4a5568;
+}
+
+/* ============================================  RESPONSIVE: TABLET (1200px and below)  ============================================ */
+@media (max-width: 1200px) {
+  body {
+    font-size: 15px;
+  }
+
+  .weather-icon-big {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+/* ============================================  RESPONSIVE: MOBILE (768px and below)  ======================================= */
+@media (max-width: 768px) {
+  /* Base font size */
+  body {
+    font-size: 14px;
+  }
+
+  h1 {
+    font-size: 1.75rem;
+  }
+
+  /* Enable scrolling on mobile */
+  .main-wrapper {
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+
+  /* City row */
+  .city-row {
+    justify-content: center;
+  }
+
+  .city-name-container {
+    width: fit-content;
+  }
+
+  /* Layout: Stack columns vertically */
+  .outer-bottom-container {
+    flex-direction: column;
+    margin-bottom: 40px;
+  }
+
+  .outer-bottom-container .col-left {
+    width: 100%;
+  }
+
+  /* Hourly forecast goes below daily forecast */
+  .outer-bottom-container .col-right {
+    overflow: visible;
+    width: 100%;
+    margin-top: 400px;
+  }
+
+  /* Location card: Keep horizontal layout */
+  .location-content-wrapper {
+    flex-direction: row;
+    text-align: left;
+    padding: 20px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .content-wrapper-col-left {
+    flex: none;
+    text-align: left;
+  }
+
+  .content-wrapper-col-left h2 {
+    font-size: 1.5rem;
+    text-align: left;
+  }
+
+  .content-wrapper-col-left span {
+    text-align: left;
+  }
+
+  .content-wrapper-col-right {
+    justify-content: flex-end;
+  }
+
+  .content-wrapper-col-right h2 {
+    font-size: 3.5rem;
+    margin-left: 10px;
+  }
+
+  .weather-icon-big {
+    width: 60px;
+    height: 60px;
+  }
+
+  /* Weather details: 2x2 grid */
+  .weather-details-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+
+  .weather-details-card {
+    width: 100%;
+    padding: 12px;
+  }
+
+  .weather-detail-text {
+    font-size: 0.8rem;
+  }
+
+  .detail-text-1-5rem {
+    font-size: 1.5rem;
+    font-weight: normal;
+  }
+
+  /* Daily forecast: 3 column grid */
+  .week-days-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+  }
+
+  .day-card {
+    width: 100%;
+    max-width: none;
+    min-height: 100px;
+  }
+
+  .day-name {
+    font-size: 1rem;
+  }
+
+  .temp-min-max {
+    font-size: 1.3rem;
+  }
+
+  /* Hourly forecast adjustments */
+  .fc-list-title-wrapper {
+    padding: 0 10px;
+  }
+
+  .fc-list-title-wrapper h3 {
+    font-size: 1.1rem;
+  }
+
+  .dropdown-toggle {
+    font-size: 0.8rem;
+    padding: 0.5rem 0.75rem;
+  }
+
+  .hourly-icon-wrapper {
+    width: 40px;
+    flex-shrink: 0;
+  }
+
+  /* Hour row: Icon left, time center, temp right */
+  .hour-row {
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    gap: 10px;
+  }
+
+  .hours-text {
+    font-size: 1.2rem;
+  }
+
+  .hour-row > div:last-child {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-left: auto;
+  }
+}
+
+/* ============================================ RESPONSIVE: SMALL MOBILE (480px and below) =================================== */
+@media (max-width: 480px) {
+  body {
+    font-size: 13px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .content-wrapper-col-right h2 {
+    font-size: 3rem;
+  }
+
+  .weather-details-card {
+    padding: 10px;
+  }
+
+  .detail-text-1-5rem {
+    font-size: 1.25rem;
+  }
+}
