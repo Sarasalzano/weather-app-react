@@ -56,5 +56,3 @@ A modern and responsive weather web app built with React that displays real-time
 
 **Design inspired by**: [Frontend Mentor](https://www.frontendmentor.io/) - Weather icons and graphic assets were taken from a Frontend Mentor challenge.
 
-
-Made with ☀️ by [Your Name]
